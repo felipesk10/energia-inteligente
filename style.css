@@ -1,0 +1,107 @@
+
+/* Configuracoes gerais da pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f5;
+    margin: 0;
+    color: #333;
+}
+
+/* Cabecalho do site */
+header {
+    background-color: #218c5a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Conteudo principal */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Caixas das secoes */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #00000015;
+}
+
+/* Titulos */
+h2 {
+    color: #218c5a;
+    margin-top: 0;
+}
+
+/* Textos dos campos */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Campos de preenchimento */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Botao de adicionar aparelho */
+button {
+    background-color: #218c5a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Cor do botao ao passar o mouse */
+button:hover {
+    background-color: #176b43;
+}
+
+/* Rodape */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.aparelho-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.aparelho-item button {
+    margin-top: 5px;
+}

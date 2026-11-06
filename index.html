@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Energia Inteligente</h1>
+        <p>Calcule o consumo de energia dos seus aparelhos.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Valor da energia</h2>
+
+            <label for="valorKwh">Valor do kWh (R$):</label>
+            <input
+                type="number"
+                id="valorKwh"
+                min="0"
+                step="any"
+                placeholder="Ex: 0,95"
+            >
+        </section>
+
+        <section>
+            <h2>Cadastrar aparelho</h2>
+
+            <label for="nomeAparelho">Nome do aparelho:</label>
+            <input
+                type="text"
+                id="nomeAparelho"
+                placeholder="Ex: Chuveiro"
+            >
+
+            <label for="tipoConsumo">Qual informação você possui?</label>
+            <select id="tipoConsumo">
+                <option value="W">Potência em watts (W)</option>
+                <option value="kW">Potência em quilowatts (kW)</option>
+                <option value="mensal">Consumo mensal (kWh/mês)</option>
+            </select>
+
+            <div id="camposPotencia">
+                <label for="potencia" id="labelPotencia">
+                    Potência do aparelho (W):
+                </label>
+                <input
+                    type="number"
+                    id="potencia"
+                    min="0"
+                    step="any"
+                    placeholder="Ex: 7800"
+                >
+
+                <label for="horas">Horas de uso por dia:</label>
+                <input
+                    type="number"
+                    id="horas"
+                    min="0"
+                    max="24"
+                    step="any"
+                    placeholder="Ex: 0,5"
+                >
+
+                <label for="dias">Dias de uso por mês:</label>
+                <input
+                    type="number"
+                    id="dias"
+                    min="1"
+                    max="31"
+                    step="1"
+                    placeholder="Ex: 30"
+                >
+            </div>
+
+            <div id="camposMensal" hidden>
+                <label for="consumoMensal">
+                    Consumo informado na etiqueta (kWh/mês):
+                </label>
+                <input
+                    type="number"
+                    id="consumoMensal"
+                    min="0"
+                    step="any"
+                    placeholder="Ex: 11"
+                >
+            </div>
+
+            <button type="button" id="btnAdicionar">
+                Adicionar aparelho
+            </button>
+        </section>
+
+        <section>
+            <h2>Meus aparelhos</h2>
+            <div id="listaAparelhos">
+                <p>Nenhum aparelho cadastrado.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Resumo do consumo</h2>
+
+            <p>
+                Consumo mensal:
+                <strong><span id="consumoTotal">0,00</span> kWh</strong>
+            </p>
+
+            <p>
+                Custo estimado:
+                <strong>R$ <span id="custoTotal">0,00</span></strong>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Energia Inteligente - Projeto acadêmico</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
